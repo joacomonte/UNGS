@@ -14,9 +14,9 @@
     	
     	static boolean hayIntersec(int [][] mat1, int col, int[][] mat2) {
     		boolean ret=false;
-    		for(int indiceFilaM1=0; indiceFilaM1<mat1.length;indiceFilaM1++) {
-    			for(int indiceFilaM2=0; indiceFilaM2<mat2.length;indiceFilaM2++) {
-    				ret=ret || mat1[indiceFilaM1][col] == mat2[indiceFilaM2][col];
+    		for(int row=0; row<mat1.length;row++) {
+    			for(int row2=0; row2<mat2.length;row2++) {
+    				ret=ret || mat1[row][col] == mat2[row2][col];
     			}
     		}
     		return ret;
